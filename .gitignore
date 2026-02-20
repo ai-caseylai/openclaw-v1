@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Virtual environments
+venv/
+env/
+ENV/
+whisper-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.key
+*.pem
+.env
+
+# Data files (large)
+*.ogg
+*.mp3
+*.mp4
+*.wav
+*.m4a
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
