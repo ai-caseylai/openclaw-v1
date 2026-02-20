@@ -176,6 +176,13 @@ async def process_message(message_data):
         message = message_data.get('message', {})
         message_id = message.get('message_id') or message.get('id')
         
+        # 調試：打印所有收到的訊息
+        print(f"\n📨 收到訊息: {message_id}")
+        print(f"   類型: {message.get('message_type', 'unknown')}")
+        print(f"   來源: {message.get('push_name', 'Unknown')}")
+        content_preview = str(message.get('content', message.get('body', '')))[:100]
+        print(f"   內容預覽: {content_preview}...")
+        
         # 檢查是否已處理
         if message_id in CONFIG["processed_messages"]:
             return
